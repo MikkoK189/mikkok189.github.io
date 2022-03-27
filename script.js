@@ -30,9 +30,21 @@ const alphabets = [
   "z",
 ];
 
+const possibleWords = [
+  "mikko",
+  "kakka",
+  "koulu",
+  "joulu",
+  "sauna",
+  "laama",
+  "naama",
+  "sahti",
+];
+
 let currentBox = 0;
 let currentRow = 0;
-let wordToGuess = "mikko";
+let wordToGuess =
+  possibleWords[Math.trunc(Math.random() * possibleWords.length)];
 let guessedWord = [];
 let guessedLetters = { 0: "", 1: "", 2: "", 3: "", 4: "" };
 let correctLetters = { 0: "", 1: "", 2: "", 3: "", 4: "" };
